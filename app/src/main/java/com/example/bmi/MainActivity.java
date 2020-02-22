@@ -15,7 +15,7 @@ import java.util.Objects;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private EditText weight;
     private EditText height;
-    private Button calculatebtn;
+    private Button calculate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         height = findViewById(R.id.height_text);
         calculate = findViewById(R.id.calculateButton);
 
-        calculatebtn.setOnClickListener(this);
+        calculate.setOnClickListener(this);
 
     }
 
