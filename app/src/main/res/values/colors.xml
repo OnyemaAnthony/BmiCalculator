@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/end</color>
+    <color name="colorPrimaryDark">@color/end</color>
+    <color name="colorAccent">#c0ca33</color>
+    <color name="yellobg">#ffde03</color>
+    <color name="startcolor">#3a1c71</color>
+
+    <color name="center">#d76d77</color>
+    <color name="end">#ffaf7b</color>
+</resources>
