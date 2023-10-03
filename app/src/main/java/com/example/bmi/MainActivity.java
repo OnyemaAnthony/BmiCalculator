@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        String weightvalue = weight.getText().toString().trim();
+        String weightValue = weight.getText().toString().trim();
         String heightValue = height.getText().toString().trim();
 
-        if (weightvalue.equals("") && heightValue.equals("")) {
+        if (weightValue.equals("") || heightValue.equals("")) {
 
             Toast.makeText(this, "Empty fields are not allowed", Toast.LENGTH_LONG).show();
         }else {
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(getApplicationContext(),"zero height not allowed",Toast.LENGTH_LONG).show();
                 return;
             }
-            double weight = Double.parseDouble(weightvalue);
+            double weight = Double.parseDouble(weightValue);
             double height = Double.parseDouble(heightValue);
             double heightSquare = height * height;
             double result = weight/heightSquare;
@@ -63,10 +63,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             intent.putExtra("size",7);
             startActivity(intent);
             finish();
-
-
-
-
 
         }
     }
