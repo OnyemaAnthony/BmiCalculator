@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "Empty fields are not allowed", Toast.LENGTH_LONG).show();
         }else {
 
-            if (heightValue.equals("0")){
+            if (heightValue.equals("0") || weightValue.equals("0")){
                 Toast.makeText(getApplicationContext(),"zero height not allowed",Toast.LENGTH_LONG).show();
                 return;
             }
